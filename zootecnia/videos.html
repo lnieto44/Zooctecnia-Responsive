@@ -1,0 +1,107 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="sakthivel's gallery">
+    <meta name="author" content="sakthivel">
+    <title>Galeria de videos</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+
+    <nav id="encabezado" class="home_btn">
+      <div align="center" class="container">
+          <a href="index.html"  class="home_btn">Galeria de Videos</a>
+        </div>
+      </div>
+    </nav>
+
+    <div align="center" class="container">
+      <div class="row">
+        <div class="col-lg-12">
+  <h2 class="page-header"> </h2>
+ </div>
+ </div>
+
+ <div class = "col-md-4">
+    <div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YQlhX0sNKcc" frameborder="0" allowfullscreen></iframe>
+  </div><br>
+  <p class="caption">Granja-ITFIP-B-2011</p>
+ </div>
+
+  <div class = "col-md-4">
+    <div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tJ0nqUjkREQ" frameborder="0" allowfullscreen></iframe>
+  </div><br>
+  <p class="caption">Maquetas de la Granja ITFIP</p>
+ </div>
+
+ <div class = "col-md-4">
+    <div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BjQyEz_Dsww" frameborder="0" allowfullscreen></iframe>
+  </div><br>
+  <p class="caption">Parto vaca muñeca</p>
+ </div>
+
+  <div class = "col-md-4">
+    <div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/e68O-9izKjs" frameborder="0" allowfullscreen></iframe>
+  </div><br>
+  <p class="caption">Parto vaca paloma</p>
+ </div>
+
+  <div class = "col-md-4">
+    <div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YUlBk2m4h5s" frameborder="0" allowfullscreen></iframe>
+  </div><br>
+  <p class="caption">Recepcion pollitos broiler</p>
+ </div>
+
+  <div class = "col-md-4">
+    <div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/njfYXQRUnUo" frameborder="0" allowfullscreen></iframe>
+  </div><br>
+  <p class="caption">Transformacion vivero ITFIP</p>
+ </div>
+
+
+
+<div class="modal fade" role="dialog" id="luis">
+ <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-body">
+    <img src='' id="model-img" height="100%" width="100%">
+   </div>
+  </div>
+ </div>
+</div>
+<footer>
+
+ <div class="row">
+  <div class="col-lg-12">
+      <br>
+   <b class="text-center">Diseño y desarrollo web: CREANDO TRANSFORMANDO, colectivo de diseño. © 2017. All Rights Reserved</b>
+  <div>
+ </div>
+
+
+</footer>
+</div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+    <script>
+        $(window).load(function(){
+         $("img").click(function(){
+          var src =$(this).attr("src");
+          $("#model-img").attr("src",src);
+          //alert(src);
+          $("#luis").modal("show");
+         });
+        });
+    </script>
+</body>﻿
+</html>

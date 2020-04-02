@@ -1,0 +1,122 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="sakthivel's gallery">
+    <meta name="author" content="sakthivel">
+    <title>Galeria de libros</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+   
+</head>
+<body>
+
+    <nav id="encabezado" class="home_btn">
+      <div align="center" class="container">
+          <a href="index.html"  class="home_btn">Galeria de libros</a>
+        </div>
+      </div>
+    </nav>
+
+    <div align="center" class="container">
+      <div class="row">
+        <div class="col-lg-12">
+  <h2 class="page-header"></h2>
+ </div>
+ </div>
+
+
+ <div class = "col-md-4">
+  <a href="assets/images/pdf/Manual_reproducción.pdf" target="new" class="img-responsive title="Manejo Producción de Leche">
+      <img class="img-responsive" src="assets/images/Galeria_libros/manejo_reproductivo_produccion.png" alt=""/></a><br>
+  <p class="caption">Manejo Producción de Leche</p>
+ </div>
+
+ <div class = "col-md-4">
+  <a href="assets/images/pdf/Zootecnia_Alimentos_racionamiento.pdf" target="new" title="Zootecnia_Alimentos_racionamiento">
+      <img class="img-responsive" src="assets/images/Galeria_libros/alimentos_racionamientos.png" alt=""/></a><br>
+  <p class="caption">Zootecnia_Alimentos_racionamiento</p>
+ </div>
+
+ <div class = "col-md-4">
+  <a href="assets/images/pdf/Inseminación_Bovina.pdf" target="new" title="Manual de Inseminación Artificial en Bovinos">
+      <img class="img-responsive" src="assets/images/Galeria_libros/manual_artificial.png" alt=""/></a><br>
+  <p class="caption">Manual de Inseminación Artificial en Bovinos</p>
+ </div>
+
+<div class = "col-md-4">
+  <a href="assets/images/pdf/Manual_Ganadería.pdf" target="new" title="Manual de Ganadería Doble Propósito">
+      <img class="img-responsive" src="assets/images/Galeria_libros/manual_ganadería.png" alt=""/></a><br>
+  <p class="caption">Manual de Ganadería Doble Propósito</p>
+ </div>
+
+ <div class = "col-md-4">
+  <a href="assets/images/pdf/Manual_industrias_carne.pdf" target="new" title="manual_idustrias_carne">
+      <img class="img-responsive" src="assets/images/Galeria_libros/manual_idustrias_carne.png" alt=""/></a><br>
+  <p class="caption">Manual de Industrias de la Carne</p>
+ </div>
+
+ <div class = "col-md-4">
+  <a href="assets/images/pdf/Manual_Inseminador.pdf" target="new"  title="Manual del Inseminador">
+      <img class="img-responsive" src="assets/images/Galeria_libros/manual_inseminador.png" alt=""/></a><br>
+  <p class="caption">Manual del Inseminador</p>
+ </div>
+
+ <div class = "col-md-4">
+  <a href="assets/images/pdf/Manual_Rastros.pdf" target="new" title="Manual de Rastros">
+      <img class="img-responsive" src="assets/images/Galeria_libros/manual_rastreos.png" alt=""/></a><br>
+  <p class="caption">Manual de Rastros</p>
+ </div>
+
+ <div class = "col-md-4">
+  <a href="assets/images/pdf/Reproducción_Asistida.pdf" target="new" title="Reproducción Asistida Animal">
+      <img class="img-responsive" src="assets/images/Galeria_libros/reproduccion_asistida.png" alt=""/></a><br>
+  <p class="caption">Reproducción Asistida Animal</p>
+ </div>
+
+ <div class = "col-md-4">
+  <a href="assets/images/pdf/Zootecnia_Bovinos.pdf" target="new" title="Zootecnia de Bovinos Productores de Leche">
+      <img class="img-responsive" src="assets/images/Galeria_libros/zootecnia_bovinos.png" alt=""/></a><br>
+  <p class="caption">Zootecnia de Bovinos Productores de Leche</p>
+ </div>
+
+  </ul>
+
+<footer>
+
+ <div class="modal fade" role="dialog" id="luis">
+ <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-body">
+    <img src='' id="model-img" height="100%" width="100%">
+   </div>
+  </div>
+ </div>
+</div>
+<footer>
+
+ <div class="row">
+  <div class="col-lg-12">
+      <br>
+   <b class="text-center">Diseño y desarrollo web: CREANDO TRANSFORMANDO, colectivo de diseño. © 2017. All Rights Reserved</b>
+  <div>
+ </div>
+
+
+</footer>
+</div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+    <script>
+        $(window).load(function(){
+         $("img").click(function(){
+          var src =$(this).attr("src");
+          $("#model-img").attr("src",src);
+          //alert(src);
+          $("#luis").modal("show");
+         });
+        });
+    </script>
+</body>﻿
+</html>
